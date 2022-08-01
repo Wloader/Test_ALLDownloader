@@ -1,0 +1,39 @@
+- desc: 设备名称_OPPO,appium启动服务端口号_4725
+  port: 4725
+  desired_caps:
+    platformName: Android
+    devicesName:  OZAMDAZLFEQSE6JB
+    appPackage: video.downloader.videodownloader.tube
+    appActivity:  free.video.downloader.converter.music.view.activity.StartupActivity
+    npReset: !!bool True
+    udid: OZAMDAZLFEQSE6JB
+
+- desc: 设备名称_sanxing,appium启动服务端口号_4724
+  port: 4724
+  desired_caps:
+    platformName: Android
+    devicesName: 520016de4f69153d
+    appPackage: video.downloader.videodownloader.tube
+    appActivity:  free.video.downloader.converter.music.view.activity.StartupActivity
+    npReset: !!bool True
+    udid: 520016de4f69153d
+
+- desc: 设备名称_Redmi,appium启动服务端口号_4726
+  port: 4726
+  desired_caps:
+    platformName: Android
+    devicesName: c7c8ca7e
+    appPackage: free.video.downloader.converter.music
+    appActivity:  free.video.downloader.converter.music.view.activity.StartupActivity
+    npReset: !!bool True
+    udid: c7c8ca7e
+
+- desc: 设备名称_Samxing,appium启动服务端口号_4727
+  port: 4727
+  desired_caps:
+    platformName: Android
+    devicesName: R9WMA01NZDJ
+    appPackage: free.video.downloader.converter.music
+    appActivity:  free.video.downloader.converter.music.view.activity.StartupActivity
+    npReset: !!bool True
+    udid: R9WMA01NZDJ
