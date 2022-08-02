@@ -9,12 +9,12 @@ from selenium.webdriver.common.by import By
 from tomorrow import threads
 from Basic.base import Base
 
-data =xlrd2.open_workbook(r'/Users/zhao/Downloads/data_all.xls')
+data =xlrd2.open_workbook(r'../Data/data_all.xls')
 cols= data.sheet_by_name("Sheet1").col_values(0)
-# add_list = cols
-add_list =["https://vimeo.com/731378604?autoplay=1",
-           "https://www.dailymotion.com/video/x8539b3",
-            "https://www.aparat.com/v/JkF83"]
+add_list = cols
+# add_list =["https://vimeo.com/731378604?autoplay=1",
+#            "https://www.dailymotion.com/video/x8539b3",
+#             "https://www.aparat.com/v/JkF83"]
 #移除表头
 # cols.remove(cols[0])
 #结果地址
@@ -52,7 +52,7 @@ def get_desired_caps(devicesName='c7c8ca7e'):
     :return: desired_caps字典格式
     '''
     curpath = os.path.dirname(os.path.realpath(__file__))
-    yamlpath = os.path.join(curpath, "phone.yaml")
+    yamlpath = os.path.join(curpath, "../Data/phone.yaml")
     print("配置地址：%s" % yamlpath)
     f = open(yamlpath, "r", encoding="utf-8")
     a = f.read()
